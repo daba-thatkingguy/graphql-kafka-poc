@@ -10,7 +10,7 @@ function GetNames({ users, error, loading }) {
 				{error && <p>Error : {error.message}</p>}
 			</div>
 			<div>
-				<TableComponent headers={["Name", 'Username']}>
+				<TableComponent headers={[{ id: "Name" }, { id: "Username" }]}>
 					{users &&
 						users.map((item) => {
 							return (
