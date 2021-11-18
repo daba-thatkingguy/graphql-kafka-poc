@@ -1,0 +1,19 @@
+type User implements Timestamps {
+	_id: ID!
+	name: String
+	email: String
+	username: String
+	createdAt: DateTime
+	updatedAt: DateTime
+}
+
+type ReturnedUser {
+	user: User!
+}
+
+input CreateUserInput {
+	name: String!
+	email: String!
+	username: String!
+	password: String!
+}

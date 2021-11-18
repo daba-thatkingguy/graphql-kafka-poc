@@ -1,0 +1,28 @@
+{
+  "name": "graphql-kafka-poc",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@dabatech:daba-thatkingguy/graphql-kafka-poc.git",
+  "author": "King Etiosasere <iyosa14@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon src/app.js",
+    "start": "node src/app.js"
+  },
+  "dependencies": {
+    "@graphql-tools/schema": "^8.3.1",
+    "apollo-server": "^3.5.0",
+    "apollo-server-express": "^3.5.0",
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "graphql": "^16.0.1",
+    "graphql-subscriptions": "^2.0.0",
+    "handlebars": "^4.7.7",
+    "kafkajs": "^1.15.0",
+    "mongoose": "^6.0.13",
+    "nodemailer": "^6.7.1",
+    "nodemon": "^2.0.15",
+    "subscriptions-transport-ws": "^0.11.0"
+  }
+}

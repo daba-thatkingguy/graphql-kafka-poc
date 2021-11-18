@@ -1,0 +1,21 @@
+scalar DateTime
+
+union CreateUserResponse = Error | ReturnedUser
+union CreatePostResponse = Error | Post
+union GetUserResponse = Error | ReturnedUser
+
+type Query {
+	getUserById(id: String!): GetUserResponse!
+	getUsers: [User]!
+	getPosts: Post!
+}
+
+type Mutation {
+	createUser(data: CreateUserInput!): CreateUserResponse!
+	createPost(data: CreatePostInput!): Post!
+}
+
+type Subscription {
+	postCreated: Post!
+	userCreated: User!
+}

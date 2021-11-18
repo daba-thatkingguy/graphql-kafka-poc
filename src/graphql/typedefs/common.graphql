@@ -1,0 +1,18 @@
+interface Timestamps {
+  createdAt: DateTime
+  updatedAt: DateTime
+}
+
+type Error { 
+  path: String!
+  message: String!
+}
+
+
+
+
+
+
+
+
+

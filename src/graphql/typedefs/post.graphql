@@ -1,0 +1,12 @@
+type Post implements Timestamps{
+	_id: ID!
+	title: String!
+  author: String
+  createdAt: DateTime!
+  updatedAt: DateTime!
+}
+
+input CreatePostInput {
+  title: String!
+  authorId: String!
+}
