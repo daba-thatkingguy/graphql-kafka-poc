@@ -1,5 +1,5 @@
 require("./kafka/admin")
-require('./notifications')
+require("./notifications")
 const express = require("express")
 const connectDB = require("./db/index")
 const { createServer } = require("http")
@@ -52,3 +52,5 @@ const pubsub = new PubSub()
 	const port = process.env.PORT || 4000
 	httpServer.listen(port, () => console.log(`Server started on port ${port}`))
 })()
+
+module.exports = pubsub
