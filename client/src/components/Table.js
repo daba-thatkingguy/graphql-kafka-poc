@@ -2,7 +2,7 @@ import React from "react"
 import { Table } from "react-bootstrap"
 
 function TableComponent({
-	headers = ["ID", "Name", "Username", "Email"],
+	headers = [{ id: "ID" }, { id: "Name" }, { id: "Username" }, { id: "Email" }],
 	children,
 }) {
 	return (
@@ -10,7 +10,7 @@ function TableComponent({
 			<thead>
 				<tr>
 					{headers.map((header) => (
-						<th>{header}</th>
+						<th key={header.id}>{header.id}</th>
 					))}
 				</tr>
 			</thead>
